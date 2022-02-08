@@ -1,10 +1,16 @@
 // Timber.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 //
 
-#include <iostream>
+#include <SFML/Graphics.hpp>
+
+using namespace sf;
 
 int main()
 {
+    // Create a video mode object
+    VideoMode vm(1024, 768);
+    // Create and open a window for the game
+    RenderWindow window(vm, "Timber!!!", Style::Fullscreen);
     return 0;
 }
 
